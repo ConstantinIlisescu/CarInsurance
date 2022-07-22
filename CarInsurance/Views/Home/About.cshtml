@@ -1,7 +1,21 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿<header>
 
-<p>Use this area to provide additional information.</p>
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="~/Video/Pexels Videos 1437396.mp4" type="video/mp4">
+    </video>
+
+    <!-- The header content -->
+    <div class="container h-100 text-color">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3 myMargin">We Offer Competitive <br /> Auto Insurance with Leading Carriers</h1>
+                <p class="text-muted mb-0">Seek a comprehensive auto insurance coverage for your car. <br /> Save money without compromising on any features."</p>
+                <p><a href="@Url.Action("Create", "Insuree")" class="btn btn-success btn-lg">GET A QUOTE &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</header>
